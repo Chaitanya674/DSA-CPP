@@ -3,7 +3,7 @@ using namespace std;
 
 int factorial(int n ){
     if(n==0){
-        return 0;
+        return 1;
     }
     int pref_sum = factorial(n-1);
     return n * pref_sum;

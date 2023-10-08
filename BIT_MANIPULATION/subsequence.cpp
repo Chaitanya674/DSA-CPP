@@ -16,7 +16,7 @@ void generator(int arr[], int n){
 } 
 
 int main(){
-    int arr[4] = {2,1,-2,5};
-    generator(arr , 4);
+    int arr[3] = {3,0,-6};
+    generator(arr , 3);
     return 0;
 }

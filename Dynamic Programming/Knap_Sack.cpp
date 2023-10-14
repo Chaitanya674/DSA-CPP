@@ -58,6 +58,7 @@ int solveTab (vector<int> &weight , vector<int> &value , int i , int capacity){
         }
     }
 
+    //step 3 : take care of the remaining recursion calls
     for(int index = 1 ; index < i; index++){
         for(int w = 0 ; w <= capacity ; w++){
             int include = 0;
@@ -71,6 +72,9 @@ int solveTab (vector<int> &weight , vector<int> &value , int i , int capacity){
     }
     return dp[i-1][capacity];
 }
+
+//Space Optimization 
+
 
 int main(){
     vector<int> weight = {1 ,2 , 4 ,5};
